@@ -2,19 +2,24 @@
 const logoHeading = document.querySelector(".logo-heading");
 const introImg = document.querySelector("header img");
 const button1 = document.querySelector(".btn");
-const button2 = document.querySelector(".btn")[1];
+const button2 = document.querySelectorAll(".btn")[1];
 const destinationContent = document.querySelector('.content-destination p');
 const img1 = document.querySelector('img');
 const textSelect = document.querySelector('.text-content p');
 
 //mouseover 
-logoHeading.addEventListener('mouseover', function(e) {
+logoHeading.addEventListener('mouseover', function() {
     introImg.style.display = "initial";
 })
 
 //dblclick 
 button1.addEventListener('dblclick', () => {
     button1.textContent = "Ooo, fancy double click!";
+})
+
+//scale
+button2.addEventListener('mouseover', function(e) {
+    e.target.style.transform = "scale(1.2,1.2)";
 })
 
 //keypress
