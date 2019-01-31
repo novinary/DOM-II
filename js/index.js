@@ -18,3 +18,7 @@ window.addEventListener('keypress', () => {
     alert("Hi, you've pressed a key!")
 })
 
+//load
+window.addEventListener("load", () => {
+    console.log("This is a test for load event listener.");
+})
