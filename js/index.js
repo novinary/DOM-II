@@ -2,8 +2,10 @@
 const logoHeading = document.querySelector(".logo-heading");
 const introImg = document.querySelector("header img");
 const button1 = document.querySelector(".btn");
+const button2 = document.querySelector(".btn")[1];
 const destinationContent = document.querySelector('.content-destination p');
 const img1 = document.querySelector('img');
+const textSelect = document.querySelector('.text-content p');
 
 //mouseover 
 logoHeading.addEventListener('mouseover', function(e) {
@@ -44,3 +46,9 @@ window.addEventListener('scroll', () => {
 img1.addEventListener('drag', () => {
     console.log("you dragged!")
 })
+
+//wheel
+textSelect.addEventListener('wheel', () => {
+    console.log("This is a wheel listener test!");
+})
+
