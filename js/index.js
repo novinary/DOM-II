@@ -5,7 +5,8 @@ const button1 = document.querySelector(".btn");
 const button2 = document.querySelectorAll(".btn")[1];
 const destinationContent = document.querySelector('.content-destination p');
 const img1 = document.querySelector('img');
-const textSelect = document.querySelector('.text-content p');
+const textSelect = document.querySelector('.text-content p')
+const navLinks = document.querySelectorAll(".nav-link");
 
 //mouseover 
 logoHeading.addEventListener('mouseover', function() {
@@ -57,3 +58,9 @@ textSelect.addEventListener('wheel', () => {
     console.log("This is a wheel listener test!");
 })
 
+//preventDefault
+navLinks.forEach((link) => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+    })
+})
